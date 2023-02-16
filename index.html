@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="my-10 text-4xl font-semibold text-center text-green-800 ">
+        <h1 class="text-6xl">money master</h1>
+    </header>
+    <main class="flex justify-evenly">
+        <div class="my-7 ">
+            <img class="h-4/6" src="image.png" alt="">
+        </div>
+        <div class="flex flex-col justify-items-end">
+            <div class="my-5">
+                <p class="inline text-xl font-bold"> Income: </p> <input id="income-feild" class="p-2 font-bold text-white bg-gray-400" type="text" placeholder="please enter your income amount"> <br>
+            </div>
+            <h2 class="text-3xl font-semibold text-center text-orange-400">expenses =></h2>
+            <div class="my-5">
+                <p class="inline text-xl font-bold"> Food: </p> <input id="food-feild" class="p-2 font-bold text-white bg-gray-400" type="text" placeholder="please enter your food budget amount"> <br>
+            </div>
+           <div> <p class="inline text-xl font-bold"> Rent: </p> <input  id="rent-feild"class="p-2 font-bold text-white bg-gray-400" type="text"  placeholder="please enter your rent budget amount"> <br></div>
+            <div class="my-7">
+                <p class="inline text-xl font-bold"> Cloths:</p> <input id="cloths-feild" class="p-2 font-bold text-white bg-gray-400" type="text"  placeholder="please enter your Cloths budget amount"> <br>
+            </div>
+            <button id="btn-caclculate" class="block px-8 py-2 mx-auto text-center text-white bg-blue-500 rounded-lg mb-7">calculate</button>
+            <h1 class="my-1 text-3xl font-semibold text-center">Total Expenses: <span id="expen-price">0000</span> </h1>
+            <h1 class="my-1 text-3xl font-semibold text-center">Balance: <span id="balance-price">0000</span></h1>
+
+            <div class="flex mb-4">
+                <div class="">
+                    <p class="inline text-xl font-bold"> Save:</p> <input id="saving-value" class="p-2 font-bold text-white bg-gray-400" type="text" placeholder="enter saving percentage">
+                   </div>
+                   <p class="px-3">%</p>
+                   <div>
+                    <button id="save-button" class="px-8 py-2 text-white bg-blue-500 rounded-lg">Save</button>
+                   </div>
+
+                   
+            </div>
+
+            <h1 class="mb-2 text-3xl font-semibold text-center">Saving Amount: <span id="saving-amount">0000</span> </h1>
+                   <h1 class="text-3xl font-semibold text-center">Remaining Balance: <span id="remaining-balance">0000</span> </h1>
+        </div>
+       
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
